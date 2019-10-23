@@ -7,4 +7,8 @@ public class UserServiceImpl implements UserService {
     public void sayHi(){
         System.out.println("hello spring");
     }
+
+    public void sayHello(){
+        System.out.println("say Hello");
+    }
 }
