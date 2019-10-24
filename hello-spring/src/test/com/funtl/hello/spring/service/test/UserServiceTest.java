@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static org.junit.Assert.assertEquals;
+
 public class UserServiceTest {
     UserService userService;
     @Before
@@ -24,6 +26,15 @@ public class UserServiceTest {
     @Test
     public void testSayHello(){
         userService.sayHello();
+    }
+
+    @Test
+    public void testAssert(){
+        String obj1 = "JUnit";
+        String obj2 = "JUnit";
+
+        assertEquals(obj1, obj2);
+        
     }
 
     @After
