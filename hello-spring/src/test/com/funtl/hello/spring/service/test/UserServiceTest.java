@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class UserServiceTest {
     UserService userService;
@@ -32,8 +32,27 @@ public class UserServiceTest {
     public void testAssert(){
         String obj1 = "JUnit";
         String obj2 = "JUnit";
+        String obj3 = "JUnit1";
+        String obj4 = "JUnit1";
+        String obj5 = null;
+        int i1 = 1;
+        int i2 = 1;
+        int[] arithmetic1 = {1, 2, 3};
+        int[] arithmetic2 = {1, 2, 3};
 
         assertEquals(obj1, obj2);
+
+        assertSame(obj3, obj4);
+
+        //obj3 和 obj4 是指向同一个引用的
+        assertNotSame(obj3, obj1);
+
+//        assertNotNull(obj5);
+        assertNull(obj5);
+
+        assertTrue("为真", i1 == i2);
+
+        assertArrayEquals(arithmetic1, arithmetic2);
         
     }
 
