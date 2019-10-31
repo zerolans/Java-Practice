@@ -1,0 +1,12 @@
+2019-11-01 01:55:26,676 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e26db8: startup date [Fri Nov 01 01:55:26 CST 2019]; root of context hierarchy
+2019-11-01 01:55:26,861 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-11-01 01:55:27,622 INFO [com.funtl.hello.spring.service.test.MyTest] - info 级别的日志
+2019-11-01 01:55:27,622 WARN [com.funtl.hello.spring.service.test.MyTest] - warn 级别的日志
+2019-11-01 01:55:27,622 ERROR [com.funtl.hello.spring.service.test.MyTest] - error 级别的日志
+2019-11-01 01:55:27,624 INFO [com.funtl.hello.spring.service.test.MyTest] - message is %s
+2019-11-01 01:57:31,326 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e26db8: startup date [Fri Nov 01 01:57:31 CST 2019]; root of context hierarchy
+2019-11-01 01:57:31,413 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring-context.xml]
+2019-11-01 01:57:31,661 INFO [com.funtl.hello.spring.service.test.MyTest] - info 级别的日志
+2019-11-01 01:57:31,661 WARN [com.funtl.hello.spring.service.test.MyTest] - warn 级别的日志
+2019-11-01 01:57:31,661 ERROR [com.funtl.hello.spring.service.test.MyTest] - error 级别的日志
+2019-11-01 01:57:31,664 INFO [com.funtl.hello.spring.service.test.MyTest] - message is message
