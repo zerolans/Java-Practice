@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="/login" method="post">
-        <input name="loginId" type="text"/>
+         <input name="loginId" type="text"/>
         <input name="password" type="password"/>
         <input type="submit" value="登录"/>
     </form>
