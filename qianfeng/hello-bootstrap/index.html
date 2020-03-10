@@ -6,11 +6,81 @@
 
     <link href="assets/plugins/Bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="assets/plugins/Bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet" />
+
+    <style type="text/css">
+        .my_div{
+            border: 1px solid red;
+        }
+
+        .my_div_1{
+            border: 1px solid red !important;
+        }
+
+        @media screen and (max-width: 480px) {
+            .my_div {
+                border: 1px solid yellow;
+            }
+        }
+    </style>
 </head>
 
 
 <body>
     <h1>Hello Bootstrap</h1>
+
+    <div class="container" style="border: 1px solid black">
+        <div class="row">
+            <div class="col-md-6 col-xs-4" style="border: 1px solid red"> 左 </div>
+            <div class="col-md-6 col-xs-4" style="border: 1px solid red"> 右 </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-4" style="border: 1px solid yellow"> 左 </div>
+            <div class="col-md-6 col-sm-4" style="border: 1px solid yellow"> 右 </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <div class="my_div">
+        媒体查询
+    </div>
+
+    <div class="my_div_1" style="border: 1px solid black">
+        !important 表示样式强制生效，这个 div 中的内联样式时不生效的，因为在 .my_div_1 类样式中加了 !important 属性。
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+        <table class="table table-condensed table-hover table-bordered table-striped">
+            <caption>精简表格布局</caption>
+            <thead>
+            <tr>
+                <th>名称</th>
+                <th>城市</th>
+                <th>邮编</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Tanmay</td>
+                <td>Bangalore</td>
+                <td>560001</td></tr>
+            <tr>
+                <td>Sachin</td>
+                <td>Mumbai</td>
+                <td>400003</td></tr>
+            <tr>
+                <td>Uma</td>
+                <td>Pune</td>
+                <td>411027</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+
 
     <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
     <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
@@ -21,5 +91,6 @@
 
     <script href="assets/plugins/Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
     <script href="assets/plugins/jquery-3.4.1.min.js" type="text/javascript"></script>
+
 </body>
 </html>
