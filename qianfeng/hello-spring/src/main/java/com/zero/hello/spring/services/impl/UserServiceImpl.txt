@@ -1,0 +1,9 @@
+package com.zero.hello.spring.services.impl;
+
+import com.zero.hello.spring.services.UserService;
+
+public class UserServiceImpl implements UserService {
+    public void sayHi() {
+        System.out.println("hello, spring");
+    }
+}

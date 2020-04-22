@@ -1,0 +1,5 @@
+package com.zero.hello.spring.services;
+
+public interface UserService {
+    void sayHi();
+}
