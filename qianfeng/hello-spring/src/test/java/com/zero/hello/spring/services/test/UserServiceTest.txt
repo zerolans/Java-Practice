@@ -1,0 +1,29 @@
+package com.zero.hello.spring.services.test;
+
+import com.zero.hello.spring.services.UserService;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class UserServiceTest {
+    UserService userService;
+
+    @Before
+    public void before(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-context.xml");
+        userService = (UserService) context.getBean("userService");
+        System.out.println("初始化数据库连接");
+    }
+
+    @Test
+    public void test(){
+        userService.sayHi();
+    }
+
+    @After
+    public void after(){
+        System.out.println("销毁数据库连接");
+    }
+}
